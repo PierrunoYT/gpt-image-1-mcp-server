@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "gpt-image-1": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/PierrunoYT/gpt-image-1-mcp-server.git"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "your_openai_api_key_here"
+      }
+    }
+  }
+}

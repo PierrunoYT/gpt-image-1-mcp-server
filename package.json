@@ -1,0 +1,47 @@
+{
+  "name": "gpt-image-1-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for OpenAI's GPT-Image-1 model - High-quality AI image generation with OpenAI's latest image model",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": "./build/index.js",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "test": "node test-openai.js",
+    "get-path": "node get-path.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PierrunoYT/gpt-image-1-mcp-server.git"
+  },
+  "homepage": "https://github.com/PierrunoYT/gpt-image-1-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/PierrunoYT/gpt-image-1-mcp-server/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "gpt-image-1",
+    "openai",
+    "image-generation",
+    "ai",
+    "typescript",
+    "model-context-protocol"
+  ],
+  "author": "PierrunoYT",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
