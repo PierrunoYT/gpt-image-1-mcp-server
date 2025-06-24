@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build output
-build/
+# build/ - commented out for npx distribution
 dist/
 
 # Environment variables
